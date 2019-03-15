@@ -46,6 +46,8 @@
 % font icons package
 \usepackage{fontawesome}
 
+\usepackage{enumitem}
+
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT  DEFINITIONS
 %----------------------------------------------------------------------------------------
@@ -278,12 +280,12 @@
 \\\colorbox{black}{{\HUGE\textcolor{white}{\textbf{Bitsulia}}}}%
 \end{minipage}%
 \begin{minipage}[t]{0.3\textwidth}\hrule height 0pt width 0pt%
+\vspace{2mm}
 \small%
 \icontext{MapMarker}{12}{Saint-Petersburg, Russia}\\
 \icontext{Phone}{12}{+7 911 764-09-57}\\
 \icontext{At}{12}{\href{mailto:gaudima@gmail.com}{gaudima@gmail.com}}\\
 \icontext{Github}{12}{\href{https://github.com/gaudima}{github.com/gaudima}}\\
-\icontext{Vk}{12}{\href{https://vk.com/big_friend}{vk.com/big\_friend}}\\
 \end{minipage}%
 
 % manage space by reducing font size
@@ -297,7 +299,7 @@
 \cvsect{Who Am I?}%
 \begin{minipage}[t]{0.4\textwidth}%
 Software Developer, graduate of Saint-Petersburg ITMO University. Have a knowledge in areas such as:
-Algorithms and Data Structures, Parsers, Theory of Computational Complexity, DBMS, Machine Learning.\\
+Algorithms and Data Structures, Parsers, Theory of Computational Complexity, DBMS, Machine Learning and VCS (Git)\\
 \end{minipage}%
 \hfill
 \begin{minipage}[t]{0.5\textwidth}\hrule height 0pt width 0pt%
@@ -308,28 +310,37 @@ Algorithms and Data Structures, Parsers, Theory of Computational Complexity, DBM
 \baritem{80}{C++}{0}{0}{100}
 \baritem{80}{JavaScript}{0}{0}{70}
 \baritem{40}{HTML}{0}{0}{60}
-\baritem{50}{Git}{0}{0}{90}
+\baritem{50}{CSS}{0}{0}{50}
 \end{barchart}
 \end{minipage}%
 
-\vspace{10mm}
+\vspace{5mm}
 \cvsect{Experience}
 \begin{entrylist}
 \entry
 {08.2018 – now\\\footnotesize{part time}}
 {C++ Developer}
 {\href{http://amungo-navigation.com}{Amungo}}
-{Mainly writing drivers for software-defined radio receivers. Also contributing to gnss-sdr project.\\
+{\vspace{-4mm}
+\begin{itemize}[leftmargin=*]
+\item Nut2nt+ receiver module for gnss-sdr.
+\item Linux library for custom nut2nt+ board with GMSL interface for Nvidia Drive.
+\item CUDA acquisition and tracking module for gnss-sdr.
+\end{itemize}\\
 \texttt{C}\slashsep\texttt{C++}\slashsep\texttt{CUDA}\slashsep\texttt{Linux}}
 \entry
 {08.2018 – now\\\footnotesize{part time}}
 {Front-end Developer}
 {\href{http://pocketpower.su}{PocketPower}}
-{Writing application for power-bank rental.\\
-\texttt{Angular}\slashsep\texttt{Ionic}}
+{\vspace{-4mm}
+\begin{itemize}[leftmargin=*]
+\item Customized OTRS helpdesk software for service-workers.
+\item Front-end side of application for power-bank rental.
+\end{itemize}\\\\
+\texttt{Perl}\slashsep\texttt{JS}\slashsep\texttt{Angular}\slashsep\texttt{Ionic}}
 \end{entrylist}
 
-\vspace{10mm}
+\vspace{5mm}
 \cvsect{Education}
 \begin{entrylist}
 \entry
@@ -344,20 +355,20 @@ Algorithms and Data Structures, Parsers, Theory of Computational Complexity, DBM
 {Applied mathematics and computer science.}
 \end{entrylist}
 
-\vspace{10mm}
+\vspace{5mm}
 \cvsect{Projects}
 \begin{entrylist}
 \entryy
 {Metorck}
 {\href{https://github.com/gaudima/metrock}{github.com/gaudima/metrock}}
-{An app similar to yandex metro for pebble time watch.}
+{An app helping to find fastest routes in russian metro for pebble time watch.}
 \entryy
 {C-Boy}
 {\href{https://github.com/gaudima/c-boy}{github.com/gaudima/c-boy}}
 {Classic gameboy emulator written as a project for C++ course.}
 \end{entrylist}
 
-\vspace{10mm}
+\vspace{5mm}
 \begin{minipage}[t]{0.3\textwidth}\hrule height 0pt width 0pt%
 \cvsect{Languages}
 \textbf{Russian} - native\\
